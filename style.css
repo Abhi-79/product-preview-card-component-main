@@ -37,7 +37,7 @@ body{
     font-size: 62.5%;
 }
 
-.container{
+main{
     width: 114rem;
     height: 80rem;
     background-color:hsl(30, 38%, 92%);
