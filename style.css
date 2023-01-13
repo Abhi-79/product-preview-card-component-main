@@ -1,0 +1,152 @@
+
+
+/* - Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+- Font size (paragraph): 14px
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:inherit;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.container{
+    width: 114rem;
+    height: 80rem;
+    background-color:hsl(30, 38%, 92%);
+    position: relative;
+}
+
+.perfume-box{
+    width: 50%;
+    height: 50%;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    border-radius: 1rem;
+
+}
+
+.perfume-image{
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.text-box{
+    padding: 2.8rem;
+}
+
+h1{
+    font-size: 3.6rem;
+    line-height: 1;
+    font-family: Fraunces, sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.perfume{
+    font-size:1rem;
+    letter-spacing:12px;
+    margin-bottom: 2rem;
+    color: hsl(228, 12%, 48%);
+    font-family:Montserrat, serif;
+    font-weight: 400;
+}
+
+.para-text{
+    font-size: 1.4rem;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 2rem;
+    line-height:1.5;
+    text-align:justify;
+    font-family:Montserrat, serif;
+    letter-spacing:1px;
+
+}
+
+.price-box{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+.price-1{
+    font-size: 2.6rem;
+    font-family: Fraunces, sans-serif;
+    color:hsl(158, 36%, 37%);
+}
+
+.price-2{
+    font-size: 1.2rem;
+    font-family:Montserrat, serif;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.btn:link,.btn:visited{
+    width: 100%;
+    font-family:Montserrat, serif;
+    margin-top: 1.8rem;
+    display:inline-block;
+    font-size: 1rem;
+    padding-top:1.2rem;
+    padding-bottom: 1.2rem;
+    text-decoration: none;
+    background-color: hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
+    text-align: center;
+    border-radius: .8rem;
+    letter-spacing: 1px;
+    position: relative;
+    transition: transform .2s;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+.btn:active{
+    transform: translateY(0);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
+
+}
+.cart{
+    display: inline-block;
+    position: absolute;
+   left: 30%;
+   top: 36%;
+}
+
+
+
